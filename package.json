@@ -1,0 +1,14 @@
+{
+  "name": "lohaa-gym-website",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "export-leads": "node server/export-leads.mjs",
+    "setup-admin": "node server/setup-admin.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

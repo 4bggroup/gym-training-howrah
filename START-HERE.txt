@@ -1,0 +1,49 @@
+LOHAA — HOWRAH GYM WEBSITE — DESIGN & LEAD DESK UPDATE 4
+
+প্রথমে ZIP-টি Extract All করুন। ZIP-এর ভিতর থেকেই HTML চালাবেন না।
+
+১. ডিজাইন দেখতে: website/index.html ডাবল-ক্লিক করুন।
+   ছবি, CSS, fonts ও animation সব local। Internet দরকার নেই।
+   এই অবস্থায় lead form Preview mode দেখাবে; enquiry download হবে, submit হবে না।
+
+২. Lead form দিয়ে enquiry সংরক্ষণ করতে:
+   Node.js 20 বা তার পরের সংস্করণ থাকতে হবে।
+   START-WINDOWS.bat ডাবল-ক্লিক করুন।
+   ব্রাউজারে http://127.0.0.1:3000 খুলুন।
+   এবার form-এ Send my enquiry দেখাবে।
+   Enquiry জমা হলে storage/leads.jsonl-এ সংরক্ষিত হবে।
+   Window চালু রাখুন। বন্ধ করতে Ctrl+C চাপুন।
+
+৩. Lead CSV পেতে: EXPORT-LEADS-WINDOWS.bat চালান।
+   storage/leads-export.csv Excel-এ খুলতে পারবেন।
+
+ফাইলের বিন্যাস:
+website/index.html — দীর্ঘ homepage
+website/privacy.html — form privacy notice
+website/assets/css/style.css — মূল design
+website/assets/css/lead-form.css — lead form design
+website/assets/js/main.js — মূল interactions
+website/assets/js/lead-form.js — দুই ধাপের lead form
+website/assets/animations/ — animation CSS ও JS
+website/assets/images/ — ১০টি optimized WebP ছবি
+website/assets/fonts/ — local fonts ও licence
+source-images/ — একই ১০টি ছবির original PNG
+server/ — enquiry save server ও CSV exporter
+storage/ — private lead records
+docs/ — setup guide, image prompts ও test results
+
+Footer: Created by Sourav Show
+
+এটি প্রস্তাবিত LOHAA brand-এর প্রথম সংস্করণ। ছবিগুলো AI দিয়ে তৈরি বাস্তবসম্মত দৃশ্য, আসল gym-এর photograph নয়।
+সর্বসাধারণের জন্য চালুর আগে প্রকৃত ঠিকানা, ফোন, opening hours, fees ও business privacy contact বসাতে হবে।
+Email/SMS/WhatsApp notification এবং payment gateway যুক্ত করা নেই।
+
+৪. Owner dashboard চালু করতে:
+   প্রথমে SETUP-ADMIN-WINDOWS.bat চালিয়ে ১২ বা তার বেশি অক্ষরের password দিন।
+   Password টাইপ করার সময় দেখা যাবে না। কোনো default password নেই।
+   Server restart করে http://127.0.0.1:3000/admin.html খুলুন।
+   Search, status filter, notes ও CSV export পাবেন।
+   Status/notes save করলে customer-কে message যাবে না।
+
+নতুন সুবিধা: ছবিতে View photo দিয়ে বড় করে দেখা, mobile-friendly image versions,
+programme থেকে সরাসরি enquiry এবং password-protected Lead Desk।

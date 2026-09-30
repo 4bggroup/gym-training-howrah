@@ -1,0 +1,5 @@
+UPDATE 4 VALIDATION
+
+Passed: Node syntax; login/logout; unauthenticated lead/export denial; HttpOnly and SameSite cookie flags; session CSRF and Origin enforcement; programme stored; search/status filters; status/notes save; conflicting edit rejection; persistence after restart; CSV export with formula escaping; login rate limit; private files inaccessible; HTML asset references; responsive image paths; unique IDs; ten distinct photos; exact footer credit; no packaged test leads or credentials.
+
+Not performed: direct browser visual or interaction tests. The required control-browser skill is unavailable in this environment.
